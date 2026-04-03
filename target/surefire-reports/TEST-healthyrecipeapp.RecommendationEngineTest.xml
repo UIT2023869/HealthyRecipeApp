@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="healthyrecipeapp.RecipeTest" time="0.041" tests="15" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="healthyrecipeapp.RecommendationEngineTest" time="0.006" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -52,19 +52,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testAddAndGetFromRepo" classname="healthyrecipeapp.RecipeTest" time="0.014"/>
-  <testcase name="testNegativeCaloriesThrows" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testZeroCaloriesThrows" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testIsNotVegetarian" classname="healthyrecipeapp.RecipeTest" time="0.0"/>
-  <testcase name="testProteinToCalorieRatio" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testDuplicateRecipeThrows" classname="healthyrecipeapp.RecipeTest" time="0.0"/>
-  <testcase name="testRemoveRecipe" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testEmptyNameThrows" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testNullNameThrows" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testSearchByIngredient" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testContainsIngredient" classname="healthyrecipeapp.RecipeTest" time="0.0"/>
-  <testcase name="testNegativeProteinThrows" classname="healthyrecipeapp.RecipeTest" time="0.0"/>
-  <testcase name="testIsVegetarian" classname="healthyrecipeapp.RecipeTest" time="0.001"/>
-  <testcase name="testGetVegetarianRecipes" classname="healthyrecipeapp.RecipeTest" time="0.0"/>
-  <testcase name="testValidRecipe" classname="healthyrecipeapp.RecipeTest" time="0.0"/>
+  <testcase name="testHighProtein" classname="healthyrecipeapp.RecommendationEngineTest" time="0.001"/>
+  <testcase name="testInvalidMaxCaloriesThrows" classname="healthyrecipeapp.RecommendationEngineTest" time="0.0"/>
+  <testcase name="testLowCal" classname="healthyrecipeapp.RecommendationEngineTest" time="0.0"/>
+  <testcase name="testBestBalanced" classname="healthyrecipeapp.RecommendationEngineTest" time="0.0"/>
 </testsuite>
