@@ -7,6 +7,13 @@ pipeline {
 
     stages {
 
+        stage('Checkout') {
+            steps {
+                echo 'Fetching code from GitHub...'
+                checkout scm
+            }
+        }
+
         stage('Build') {
             steps {
                 echo 'Building project using Maven...'
@@ -25,6 +32,12 @@ pipeline {
             steps {
                 echo 'Packaging project...'
                 bat 'mvn package'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying project...'
             }
         }
     }
