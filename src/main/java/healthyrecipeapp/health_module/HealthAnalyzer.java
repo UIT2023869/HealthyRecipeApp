@@ -7,7 +7,7 @@ public class HealthAnalyzer {
     public int calculateHealthScore(Recipe recipe) {
 
         if (recipe == null) {
-            throw new IllegalArgumentException("Recipe cannot be null");
+            throw new IllegalArgumentException(" Wait, Recipe cannot be null");
         }
 
         int score = 0;
